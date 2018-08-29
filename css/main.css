@@ -241,8 +241,8 @@ input[type=submit]:hover {
 /* form end */
 
 .footer a{
-    flex: calc(98%/6);
-    max-width: calc(98%/6);
+    flex: calc(98.2%/6);
+    max-width: calc(98.6%/6);
     margin: 2px;
 }
 
@@ -342,6 +342,12 @@ input[type=submit]:hover {
     .bar-img{
         font-size: 40px;
     }
+
+    .footer a{
+        flex: calc(99%/6);
+        max-width: calc(99%/6);
+        margin: 2px;
+    }
     
 }
 
@@ -379,6 +385,13 @@ input[type=submit]:hover {
     .bar-img{
         font-size: 37px;
     }
+
+    .footer a{
+        flex: calc(98.3%/6);
+        max-width: calc(98.6%/6);
+        margin: 2px;
+    }
+
 }
 
 
@@ -431,6 +444,12 @@ input[type=submit]:hover {
         height: 270px;
     }
 
+    .footer a{
+        flex: calc(98.2%/3);
+        max-width: calc(98.6%/3);
+        margin: 2px;
+    }
+
 }
 
 
@@ -451,8 +470,8 @@ input[type=submit]:hover {
     }
 
     .footer a{
-        flex: calc(98%/3);
-        max-width: calc(98%/3);
+        flex: calc(98.2%/3);
+        max-width: calc(98.6%/3);
         margin: 2px;
     }
 
@@ -481,7 +500,7 @@ input[type=submit]:hover {
     }
     .footer a{
         flex: calc(98%/3);
-        max-width: calc(98%/3);
+        max-width: calc(98.4%/3);
         margin: 2px;
     }
     .bar-img{
@@ -535,8 +554,8 @@ input[type=submit]:hover {
         max-width: 100%;
     }
     .footer a{
-        flex: 98%;
-        max-width: 98%;
+        flex: 99%;
+        max-width: 99%;
         margin: 2px;
     }
     .bar-img{
