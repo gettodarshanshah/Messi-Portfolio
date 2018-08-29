@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <!--linking google fonts used in my web page-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <!--linking icons used in my webpage-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?9ukd8d">
+    <!--linking my style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+
+<body>
+
+    <!--Defining Navigation Bar-->
+
+    <header>
+        <nav class=navbar_top id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#connect"><strong>Connect with Me !</strong></a>
+            <a href="#portfolio"><strong>Portfolio</strong></a>
+            <a href="#about"><strong>About</strong></a>
+            <a class=active href="#home"><strong>Home</strong></a>
+            <img class="logo" src="img/logo_modified.jpeg" alt="">
+        </nav>
+    </header>
+
+    <!--Defining Hero Section and Hero Captions-->
+
+    <div class="hero_section" id=home>
+        <article class="hero_section_text">
+            <h1>Lionel Messi - </h1>
+            <h3>
+                <q>The best decisions aren't made with your mind, but with your instinct.</q>
+            </h3>
+        </article>
+    </div>
+
+    <!--Defining About Section - 1X3 flexbox layout-->
+
+    <div class="about" id=about>
+        <!--header-->
+        <header><b> About </b></header>
+
+        <aside class="flex-container">
+
+            <aside class="bar-img">
+                <p>
+                    <strong class="black"><u>Social Outreach</u></strong><br><br>
+                    <a target="_blank" href="https://www.facebook.com/leomessi/" class="socicon-facebook"></a> - 90M+<br><br>
+                    <a target="_blank" href="https://www.facebook.com/leomessi/" class="socicon-twitter"></a> - 2.65M<br><br>
+                    <a target="_blank" href="https://www.facebook.com/leomessi/" class="socicon-instagram"></a> - 97.6M+<br><br>
+                    <a target="_blank" href="https://www.facebook.com/leomessi/" class="socicon-youtube"></a> - 311k<br><br>
+                    <strong class="black"><u>Philanthrophy</u></strong><br><br>
+                    <a target="_blank" href="#"><span class="white">LEO MESSI Foundation</span></a>
+                </p>
+
+            </aside>
+
+            <aside class="bar-img">
+                <p>
+                    <strong class="white"><u>Profile</u></strong><br><br>
+                    <span class="black">Full name - Lionel Andrés Messi<br></span>
+                    Date of birth - 24 June 1987<br>
+                    <span class="black">Place of birth - Rosario, Argentina</span><br> Height - 1.70m<br>
+                    <span class="black">Playing Position - Forward</span><br> National Team - Argentina<br>
+                    <span class="black">Club Team - Barcelona</span><br> Ballon D'or - 5 Times<br>
+                    <span class="black">International Goals - 619</span><br>
+                </p>
+            </aside>
+
+            <aside class="bar-img">
+                <p>
+                    <strong class="black"><u>Achievements</u></strong><br><br>
+                    <span class="white">Olymic Gold Medal(2008)</span><br><br>
+                    <span class="black">FIFA World Cup Runner-Up(2014)</span><br><br>
+                    <span class="white">FIFA Club World Cup(2011/2015)</span><br><br>
+                    <span class="black">FIFA World Player of the Year(2009)</span><br><br
+                    <span class="white">UEFA Club Footballer of the Year(2009)</span>
+                </p>
+            </aside>
+
+        </aside>
+
+    </div>
+
+    <!--Image Gallery For the webpage 3X4 layout using flexbox-->
+
+    <div class="portfolio_images" id=portfolio>
+        <!--header-->
+        <header>
+            <b>Moments Captured</b>
+        </header>
+        <aside class="flex-container-2">
+            <!--Images-->
+            <aside class="gallery">
+                <img src="img/new_images/messi_crowd.jpg" alt="">
+                <img src="img/new_images/fifa_18_cover.png" alt="">
+                <img src="img/messi_shirt.jpg" alt="">
+            </aside>
+            <aside class="gallery">
+                <img src="img/crop.jpeg" alt="">
+                <img src="img/new_images/sports_mag_cover.jpg" alt="">
+                <img src="img/new_images/gallery9.jpeg" alt="">
+            </aside>
+            <aside class="gallery">
+                <img src="img/new_images/messi_award.jpg" alt="">
+                <img src="img/new_images/crowd_clicking_pics.png" alt="">
+                <img src="img/new_images/messi_popular.jpeg" alt="">
+            </aside>
+            <aside class="gallery">
+                <img src="img/new_images/gallery4.jpg" alt="">
+                <img src="img/new_images/gallery5.jpeg" alt="">
+                <img src="img/galery6.jpeg" alt="">
+            </aside>
+        </aside>
+    </div>
+
+    <!--Creating Connect with Me section-->
+
+    <aside class="container" id=connect>
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="contactno">Contact No.</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="contactno" name="contactno" placeholder="Your contact info..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email ID..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="spain">Spain</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="india">India</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </aside>
+
+    <!--Defining Footer - contains icons -->
+
+    <footer>
+        <aside class="footer">
+            <a target="_blank" href="https://www.facebook.com/leomessi/" class="fa fa-facebook"></a>
+            <a target="_blank" href="https://twitter.com/teammessi?lang=en" class="fa fa-twitter"></a>
+            <a target="_blank" href="https://plus.google.com/+messileo" class="fa fa-google"></a>
+            <a target="_blank" href="#" class="fa fa-linkedin"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCpIs6zk7yNtsHxRqDHiwu8w" class="fa fa-youtube"></a>
+            <a target="_blank" href="https://www.instagram.com/leomessi/" class="fa fa-instagram"></a>
+        </aside>
+        <aside class="copyright">
+            Lionel Messi &copy; 2018
+        </aside>
+    </footer>
+
+    <!--Javascript function called when clicking on navbar toggle icon-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar_top") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar_top";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
