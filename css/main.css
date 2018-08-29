@@ -45,6 +45,9 @@
 
 .navbar_top .icon{
     display: none;
+    width: 60px;
+    height: 60px;
+    padding: 0;
 }
 
 .hero_section{                             /* Hero Section */
@@ -425,7 +428,7 @@ input[type=submit]:hover {
     .hero_section_text h3{
         color: darkgray;
         letter-spacing: 6px;
-        font-size: 26px;
+        font-size: 30px;
     }
 
     .bar-img{
@@ -433,7 +436,7 @@ input[type=submit]:hover {
     }
 
     .container{
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .portfolio_images{
@@ -453,7 +456,7 @@ input[type=submit]:hover {
 }
 
 
-@media screen and (max-width: 1024px) {             /* Laptop Normal Displays */
+@media screen and (max-width: 1024px) {             /* Small Laptops Displays */
     .navbar_top{
         position: fixed;
         top: 0%;
@@ -517,8 +520,6 @@ input[type=submit]:hover {
 
 
 @media screen and (max-width: 600px) {               /* Mobile Displays */
-
-   
     .navbar_top a:not(:first-child) {
         display: none;
         background-color: darkslategrey;
@@ -535,14 +536,14 @@ input[type=submit]:hover {
 
 
 @media screen and (max-width: 600px) {
-       
     .navbar_top.responsive {
         position: relative;
         background-color: darkslategrey;
     }
     .navbar_top.responsive .icon {
-        right: 0;
-        top: 0;
+        float: right;
+        /* right: 0;
+        top: 0; */
     }
     .navbar_top.responsive a {
         float: none;
