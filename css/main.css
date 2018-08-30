@@ -8,6 +8,7 @@
     margin: 0%;
     font-family: 'Amatic SC', cursive;
     letter-spacing: 3px;
+    scroll-behavior: smooth;
 }
 
 .navbar_top{                             /* Fixed Navigation Bar */
@@ -41,7 +42,6 @@
     background-color: darkcyan;
     color: black;
 }
-
 
 .navbar_top .icon{
     display: none;
@@ -96,8 +96,7 @@
     padding: 0 4px;
 }
 
- 
-.bar-img {
+ .bar-img {
     /* width: calc(98.5%/3); */
     background-color: darkcyan;
     text-align: justify;
@@ -111,7 +110,6 @@
 .bar-img a{
     text-decoration: none;
 }
-
 
 .flex-container p{
     text-align: center;
@@ -131,19 +129,15 @@
     text-transform:uppercase;
 }
 
-
-
 .portfolio_images{                         /* Image Gallery Using a header and Flexbox */
     background-color:black;
 }
-
 
 .portfolio_images header{
     text-align: center;
     color: darkcyan;
     font-size: 50px;
 }
-
 
 .flex-container-2{
     display: flex;
@@ -152,7 +146,6 @@
     width: 100%;
     background-color: black;
 }
-
 
 .gallery{
     flex: 25%;
@@ -172,6 +165,36 @@
     transform: scale(1.1);
 }
 
+/* Adding Overlay */
+
+.overlay-container {
+    /* position: relative; */
+    width: 100%;
+    /* max-width: 300px; */
+}
+  
+.overlay {
+    /* position: absolute;  to bring the text on image */
+    bottom: 0; 
+    /* background: rgb(0, 0, 0); */
+    background: rgba(0, 0, 0, 0.5); /*Black see-through */
+    /* color: #f1f1f1;  */
+    width: 100%;
+    transition: .3s ease-in-out;
+    opacity:0;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 13px;
+    text-align: center;
+    font-weight: bolder;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+  
+.overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+/* End of Overlay */
 
 .footer{                               /*Setting Footer Styles (social media icons) using flexbox*/
     display: flex;
@@ -180,7 +203,6 @@
     flex-wrap: wrap;
     background-color:darkslategray;
 }
-
 
 /* form Start*/
 
@@ -248,7 +270,6 @@ input[type=submit]:hover {
     max-width: calc(98.6%/6);
     margin: 2px;
 }
-
 
 .fa {
     padding: 20px;
@@ -354,7 +375,6 @@ input[type=submit]:hover {
     
 }
 
-
 @media screen and (max-width: 2560px) {              /* 4k displays  */
     .navbar_top{
         position: fixed;
@@ -397,7 +417,6 @@ input[type=submit]:hover {
 
 }
 
-
 @media screen and (max-width: 1440px) {             /* Laptop HD displays */
     .hero_section{
         height: 695px;
@@ -417,6 +436,7 @@ input[type=submit]:hover {
         width: 85px;
         height: 85px;
     }
+
     .hero_section_text h1{
         color: darkcyan;
         font-size: 50px;
@@ -454,7 +474,6 @@ input[type=submit]:hover {
     }
 
 }
-
 
 @media screen and (max-width: 1024px) {             /* Small Laptops Displays */
     .navbar_top{
@@ -495,7 +514,6 @@ input[type=submit]:hover {
 
 }
 
-
 @media screen and (max-width: 800px) {               /* Tablet Displays */
     .gallery{
         flex: 50%;
@@ -518,7 +536,6 @@ input[type=submit]:hover {
 
 }
 
-
 @media screen and (max-width: 600px) {               /* Mobile Displays */
     .navbar_top a:not(:first-child) {
         display: none;
@@ -533,7 +550,6 @@ input[type=submit]:hover {
     }
     
 }
-
 
 @media screen and (max-width: 600px) {
     .navbar_top.responsive {
@@ -562,7 +578,6 @@ input[type=submit]:hover {
     .bar-img{
         flex: 100%;
         max-width: 100%;
-
     }
 
     .col-25, .col-75, input[type=submit] {
