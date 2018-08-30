@@ -163,57 +163,62 @@
 
     <!--Creating Connect with Me section-->
 
-    <aside class="container" id=connect>
-        <form action="#">
-            <div class="row">
-                <div class="col-25">
-                    <label for="name">Name</label>
+    <div id=connect>
+        <header>
+            <b>Let's Connect</b>
+        </header>
+        <aside class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="name" name="name" placeholder="Your name..">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="contactno">Contact No.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="contactno" name="contactno" placeholder="Your contact info..">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="contactno">Contact No.</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your email ID..">
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="contactno" name="contactno" placeholder="Your contact info..">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="spain">Spain</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="india">India</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email ID</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="email" name="email" placeholder="Your email ID..">
+                <div class="row">
+                    <input type="submit" value="Submit">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">Country</label>
-                </div>
-                <div class="col-75">
-                    <select id="country" name="country">
-                        <option value="spain">Spain</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="india">India</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </aside>
+            </form>
+        </aside>
+    </div>
 
     <!--Defining Footer - contains icons -->
 

@@ -16,6 +16,8 @@
     top: 0%;
     width: 100%;
     overflow: hidden;
+    /* background-color: darkcyan;
+    opacity: 0.6; */
 }
 
 .navbar_top a{
@@ -33,9 +35,9 @@
 .navbar_top .logo{
     position: relative;
     left : 18px;
-    top: 10px;
-    height: 85px;
-    width: 85px;
+    top: 4px;
+    height: 68px;
+    width: 58px;
 }
 
 .navbar_top a:hover{  
@@ -61,7 +63,7 @@
     align-items: center;
     justify-content: center;
     background-position: center center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .hero_section_text h1{                      /* Hero Caption */
@@ -90,9 +92,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* flex-direction: row; */
     background-color: darkslategray;
-    /* align-items: stretch; */
     padding: 0 4px;
 }
 
@@ -168,17 +168,13 @@
 /* Adding Overlay */
 
 .overlay-container {
-    /* position: relative; */
     width: 100%;
-    /* max-width: 300px; */
 }
   
 .overlay {
     /* position: absolute;  to bring the text on image */
     bottom: 0; 
-    /* background: rgb(0, 0, 0); */
     background: rgba(0, 0, 0, 0.5); /*Black see-through */
-    /* color: #f1f1f1;  */
     width: 100%;
     transition: .3s ease-in-out;
     opacity:0;
@@ -187,7 +183,6 @@
     padding: 13px;
     text-align: center;
     font-weight: bolder;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
   
 .overlay-container:hover .overlay {
@@ -204,6 +199,13 @@
     background-color:darkslategray;
 }
 
+
+#connect header{
+    text-align: center;
+    font-size: 50px;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
 /* form Start*/
 
 input[type=text], select, textarea {
@@ -284,7 +286,7 @@ input[type=submit]:hover {
     opacity: 0.5;
 }
 
-.fa-facebook {                                   /* Icon Styling */
+.fa-facebook {                                   /* Footer Icon Styling */
     background: black;
     color: darkcyan;
 }
@@ -337,8 +339,9 @@ input[type=submit]:hover {
     .navbar_top .logo{
         position: relative;
         left : 15px;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 93px;
+        top : 8px;
     }
 
     .hero_section_text h1{
@@ -387,8 +390,9 @@ input[type=submit]:hover {
     .navbar_top .logo{
         position: relative;
         left : 15px;
-        width: 140px;
-        height: 140px;
+        width: 95px;
+        height: 90px;
+        top: 8px;
     }
 
     .hero_section_text h1{
@@ -433,8 +437,9 @@ input[type=submit]:hover {
     .navbar_top .logo{
         position: relative;
         left : 15px;
-        width: 85px;
-        height: 85px;
+        width: 68px;
+        height: 58px;
+        top : 4px;
     }
 
     .hero_section_text h1{
@@ -487,8 +492,9 @@ input[type=submit]:hover {
     .navbar_top .logo{
         position: relative;
         left : 15px;
-        /* width: 80px;
-        height: 80px; */
+        width: 62px;
+        height: 52px;
+        top : 4px;
     }
 
     .footer a{
@@ -510,6 +516,10 @@ input[type=submit]:hover {
 
     .container{
         font-size: 32px;
+    }
+
+    .hero_section_text h1{
+        padding : 2%;
     }
 
 }
@@ -548,12 +558,33 @@ input[type=submit]:hover {
     .navbar_top .logo{
         display: none;
     }
+
+    .about header{
+        display: none;
+    }
+
+    /* #connect header{
+        display: none;
+    } */
+
+    .col-25{
+        display: none;
+    }
+
+    .col-75{
+        padding: 5px;
+    }
     
 }
 
 @media screen and (max-width: 600px) {
+    .navbar_top{
+     background-color: darkcyan; 
+     opacity: 1;  
+    }
+
     .navbar_top.responsive {
-        position: relative;
+        position: fixed;
         background-color: darkslategrey;
     }
     .navbar_top.responsive .icon {
